@@ -1,143 +1,89 @@
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: underline double  red;
-
-}
-header p {
-    color: black;
-    font-family: arial;
-    font-size: medium;
-}
-main p {
-    color: black;
-    font-size: large;
-    font-family: Impact ;
-    text-decoration: underline solid red;
-}
-body{
-    background-color: rgb(187, 255, 255);
-}
-pre{
-    font-size: 15px;
-}
-
-a{
-   
-    color: black;
-    text-decoration: none;
-    font-size: larger;
-    font-family: Impact ;
-    text-decoration: underline solid red;
-}
-
-#project{
-        font-size: 15px;
-     
-}
-#Pfistline{
-    font-family: impact;
-    font-size: 15px;  
-
-}
-.Pheadings{
-    font-family: impact;
-    font-size: 15px;  
-
-}
-.Pheadings1{
-    font-family: impact;
-    font-size: 15px;  
-
-}
-.Pheadings2{
-    font-family: impact;
-    font-size: 15px;  
-
-}
-
-
-
-/* GLOBAL RESPONSIVE FIX */
-body {
+*{
     margin: 0;
-    padding: 10px;
+    width: 0;
+}
+
+/* this is a top bannner box  */
+#toper-banner{
+    height: 100px;
+    width: 100vw;
+    background-color: aqua;
+    text-align: center;
+    font-size: 5em;
+}
+
+/* this is inner box in hero section */
+#inner-box{
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    justify-content: baseline;
+    background-color: white;
+}
+
+#left-box{
+    width: 280px;
+    padding: 16px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;      
+    align-items: flex-start;  
+    
+}
+#home{
+    font-size: 2rem;
+    margin-bottom: 16px;
+    padding-left: 50px
 }
 
-/* Allow long text to wrap inside <pre> */
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    line-height: 1.5;
-    background: #f8f8f8;
-    padding: 10px;
-    border-radius: 6px;
+#left-inner-box{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.same{
+    text-decoration: none;
+    display: block;
+}
+#Practice-Question{
+    padding: 2px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#Project-Idea{
+    padding: 2px;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+#Tips-Tricks{
+    padding: 2px;
+    font-size: 20px;
+    padding-top: 55px;
+    padding-left: 20px;
+}
+#How-Use-AI{
+    padding: 2px;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
 }
 
-/* Project page block */
-#project {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: 16px;
-    background: #f8f8f8;
-    padding: 12px;
-    border-radius: 6px;
-    line-height: 1.6;
+#right-box{
+    height: 600px;
+    width: 100vw;
+    border: 2px solid black;
 }
 
-#Pfistline,
-.Pheadings,
-.Pheadings1,
-.Pheadings2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-/* RESPONSIVE VIDEO */
-iframe {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    border: none;
-}
-
-/* MOBILE BREAKPOINT */
-@media (max-width: 600px) {
-
-    h1 {
-        font-size: 24px;
-    }
-
-    header p {
-        font-size: 14px;
-        line-height: 1.4;
-        text-align: justify;
-    }
-
-    main p {
-        font-size: 16px;
-    }
-
-    a {
-        font-size: 16px;
-        margin: 10px 0;
-        display: block;
-    }
-
-    pre,
-    #project {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    #Pfistline,
-    .Pheadings,
-    .Pheadings1,
-    .Pheadings2 {
-        font-size: 15px;
-    }
+#last-footer{
+    width: 100vw;
+    height: 73px;
+    background-color: black;
+    border-top: 3px solid red;
+    color: white;
+    font-size: 1.5rem;
 }
