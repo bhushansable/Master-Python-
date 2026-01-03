@@ -31,6 +31,8 @@
     position: fixed;
     left: 0px;
 }
+
+/* left box home  */
 #home-text{
     text-decoration: none;
 }
@@ -38,7 +40,26 @@
     margin-top: 50px;
     margin-left: 80px;
     font-size: 1.5rem;
+    position: relative;
+    z-index: 0;
     
+}
+
+#home::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 0%;
+    background:linear-gradient(to right ,#ffee00 ,#ffb300) ;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 130ms ease-in-out;
+}
+
+#home:hover::after{
+    color: black;
+    width: 55%;
 }
 /* this is a left box inner section */
 #inner-box{
@@ -58,6 +79,25 @@
     font-size: 1.5rem;
     margin-top: 35px;
     text-align: center;
+    position:relative ;
+    z-index: 0;
+}
+
+.same::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 0%;
+    background:linear-gradient(to right ,#ffee00 ,#ffb300) ;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 130ms ease-in-out;
+}
+
+.same:hover::after{
+    color: black;
+    width: 100%;
 }
 
 /* right-box section */
